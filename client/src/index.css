@@ -1,7 +1,14 @@
 
-.map-container {
-  height: 500px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+
+.map-container {
+  height: 100vh;
+  width: 100vw;
 }
+
+
 
 
