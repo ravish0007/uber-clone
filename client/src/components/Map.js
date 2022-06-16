@@ -10,7 +10,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import NavigationSelector from './NavigationSelector'
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_APIKEY
-const socket = io.connect('https://xpve.rocks:3001')
+const socket = io.connect(process.env.REACT_APP_WS_URL)
 
 export default function Map () {
   const mapContainer = useRef(null)
